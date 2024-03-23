@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+        body{
+            background-color: rgb(133, 40, 176);
+            font-family: Arial, sans-serif;
+        }
+        .container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: cadetblue;
+          height: 520px;
+          width: 550px;
+          border-radius: 20px;
+          position: relative;
+          position: relative;
+          left: 550px;
+          top: 90px;
+          
+        }
+        h2{
+            font-size: 40px;
+            text-align: top;
+           position: relative;
+           bottom: 200px;
+           left:  100px;
+           color: white;
+        }
+        .form-group input{
+          padding-top: 10px;
+          background:transparent;
+          position: relative;
+          right: 40px;
+          border-bottom: 1px solid orange ;
+
+        } 
+        p{
+          position: relative;
+          right: 250px;
+          top: 200px;
+        }
+        button{
+          font-size: 20px;
+          height: 40px;
+          width: 90px;
+          position: relative;
+          bottom: -10px;
+          left: -30px;
+        }
+        button:hover{
+          background-color: orangered;
+        }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Register</h2>
+    <form action="#">
+      <div class="form-group">
+        <label for="lname">Last Name:</label>
+        <input type="text" id="firstname" name="firstname" required>
+      </div>
+      <div class="form-group">
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required>
+      </div>
+      <div class="form-group">
+        <label for="dob">D.O.B:</label>
+        <input type="datetime-local" id="date" name="date" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Confirm Password:</label>
+        <input type="Cpassword" id="Cpassword" name="Cpassword" required>
+      </div>
+     <h3 class="do"><a href="login.html"><button type="button">Submit</button></a></h3>
+    </form>
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+  </div>
+</body>
+</html>
