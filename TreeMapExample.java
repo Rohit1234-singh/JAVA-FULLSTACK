@@ -11,12 +11,14 @@ public class TreeMapExample {
         for(Map.Entry m: tm.entrySet()){
             System.out.println(m.getKey()+" "+m.getValue());
         }
+        // Remove method
         tm.remove(3);
         System.out.println("after invoking remove()");
         for(Map.Entry m: tm.entrySet()){
             System.out.println(m.getKey()+" "+ m.getValue());
         }
 
+        // PutAll Method
         TreeMap<Integer,String> al= new TreeMap<>();
         al.put(3,"Mikha");
         al.put(5,"Tushar");
